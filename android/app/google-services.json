@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319162091940",
+    "project_id": "todo-list-a6ec5",
+    "storage_bucket": "todo-list-a6ec5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319162091940:android:b0b69dbf77fb6284075931",
+        "android_client_info": {
+          "package_name": "adel.todo_list"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRG8X9wNVrEoQiINyJLFLBGT53gJ7UQP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
