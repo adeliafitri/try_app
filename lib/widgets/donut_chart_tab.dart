@@ -64,6 +64,7 @@ class DonutChartTab extends StatelessWidget {
                                 yValueMapper: (ChartData data, _) => data.y,
                                 cornerStyle: CornerStyle.bothCurve,
                                 explode: true,
+                                explodeOffset: '3%',
                                 explodeAll: true,
                                 dataLabelSettings: DataLabelSettings(
                                     // Renders the data label

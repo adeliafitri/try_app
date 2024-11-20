@@ -45,6 +45,7 @@ dependencies:
   ming_cute_icons: ^0.0.6
   syncfusion_flutter_charts: ^20.2.45
   flutter_screenutil: ^5.9.3
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,9 @@ flutter:
     - assets/images/home.png
     - assets/images/profile.jpg
     - assets/images/Logo_SGN.png
+    - assets/images/foto_giling.png
+    - assets/images/analisis_rendemen1.png
+    - assets/images/analisis_rendemen_max.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

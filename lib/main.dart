@@ -9,6 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
+final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
 const Map<int, Color> whiteColorSwatch = {
   50: Color(0xFFFFFFFF),
   100: Color(0xFFFFFFFF),
@@ -51,6 +52,7 @@ class ToDoApp extends StatelessWidget {
             primarySwatch: whiteSwatch, // Menggunakan MaterialColor putih
             textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
           ),
+          navigatorObservers: [routeObserver],
           home: const HomeScreen(),
         );
       },

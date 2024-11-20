@@ -4,7 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/mingcute.dart';
 import 'package:ming_cute_icons/ming_cute_icons.dart';
+import 'package:try_app/views/analisa.dart';
 import 'package:try_app/views/home.dart';
+import 'package:try_app/views/quick_report.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -106,7 +108,12 @@ class NavDrawer extends StatelessWidget {
             child: ListTile(
               leading: Icon(Icons.inbox_outlined, color: Color(0xFF64748B),),
               title: Text('Analisa', style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xFF64748B)),),
-              onTap: () => {},
+              onTap: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AnalisaScreen()),
+                ),
+              },
             ),
           ),
           Padding(
@@ -114,7 +121,12 @@ class NavDrawer extends StatelessWidget {
             child: ListTile(
               leading: Icon(Icons.move_to_inbox_outlined, color: Color(0xFF64748B),),
               title: Text('Quick Report', style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xFF64748B)),),
-              onTap: () => {Navigator.of(context).pop()},
+              onTap: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QuickReportScreen(tabIndex: tabIndex)),
+                ),
+              },
             ),
           ),
           Padding(
